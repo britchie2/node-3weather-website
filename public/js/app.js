@@ -50,7 +50,7 @@ weatherForm.addEventListener('submit', (event) => {
                     console.log(data.location)                  
                    // Load some weather info
                    msg1.textContent = data.location
-                   msg2.textContent = "Condition: " + data.condition + " Temp " + data.temp + " Feels " + data.feels
+                   msg2.textContent = "Condition: " + data.condition + " Temp: " + data.temp + " Feels: " + data.feels
                 }
             } )
         
