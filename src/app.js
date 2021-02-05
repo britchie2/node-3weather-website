@@ -40,7 +40,7 @@ app.get ('/help', (req, res) => {
     res.render ('help', {
         version: '1.0',
         author: 'Tori Amos',
-        title: 'help',
+        title: 'Help',
         name: 'brooks'
     })
 })
