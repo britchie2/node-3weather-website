@@ -15,7 +15,8 @@ const forecast = (lat, longt, callback) => {
             callback (undefined,  {
                 Condition: body.current.weather_descriptions[0],
                 Temperature: body.current.temperature,
-                RealFeel: body.current.feelslike
+                RealFeel: body.current.feelslike,
+                Winds: body.current.wind_speed
             } )
             // console.log("Current weather information")
             // console.log("---------------------------")    

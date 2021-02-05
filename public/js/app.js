@@ -27,6 +27,7 @@ const weatherForm = document.querySelector ('form')
 const search = document.querySelector ('input')
 const msg1 = document.querySelector ('#message-1')
 const msg2 = document.querySelector ('#message-2')  // # for id selector
+const msg3 = document.querySelector ('#message-3') // adding forecast info
 
 weatherForm.addEventListener('submit', (event) => {
     event.preventDefault()
@@ -47,6 +48,7 @@ weatherForm.addEventListener('submit', (event) => {
                    // Load some weather info
                    msg1.textContent = data.location
                    msg2.textContent = "Condition: " + data.condition + " Temp: " + data.temp + " Feels: " + data.feels
+                   msg3.textContent = "Wind Speed: " + data.winds
                 }
             } )
         

@@ -84,7 +84,8 @@ app.get ('/weather', (req, res) => {
                         location: location,
                         condition: data.Condition,
                         temp: data.Temperature,
-                        feels: data.RealFeel
+                        feels: data.RealFeel,
+                        winds: data.Winds
                     })
                 }
               })
