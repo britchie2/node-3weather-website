@@ -9,7 +9,7 @@ const forecast = (lat, longt, callback) => {
             callback('Unable to connect to forecasting services!', undefined)
         }
         else if (body.error)  {
-            callback('Location cannot be found', undefined)
+            callback('Location cannot be found, sorry', undefined)
         }
         else  {
             callback (undefined,  {
